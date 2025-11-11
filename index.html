@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKARO - Penyedap Rasa Alami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ikarostyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images.jpg/logo.jpg" alt="Logo IKARO" class="logo">
+            <h1>IKARO</h1>
+        </div>
+         <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+    
+  </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="tim.html">Profil Tim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>IKARO adalah brand penyedap rasa alami yang terbuat dari tulang dan kepala ikan pilihan, diolah dengan teknologi modern untuk menjaga keaslian rasa dan kualitas gizi. Diproduksi oleh IKARO, kami berkomitmen menghadirkan rasa gurih alami tanpa bahan pengawet, pewarna, atau MSG tambahan. Dengan cita rasa yang khas, IKARO menjadi pilihan tepat untuk rumah tangga, restoran, dan industri kuliner yang mengutamakan kualitas, kesehatan, dan kelezatan.</p>
+    </section>
+
+    <section id="products">
+        <h2>Produk Kami</h2>
+        <div class="product">
+            <img src="images.jpg/produk1.jpg" alt="Penyedap Rasa IKARO 100g">
+            <h3>IKARO Kemasan 100 gram</h3>
+            <p>IKARO 100 gram adalah kemasan ekonomis untuk kebutuhan memasak harian. Terbuat dari tulang dan kepala ikan segar, menghasilkan rasa gurih yang kaya dan sehat tanpa bahan tambahan berbahaya. Ideal untuk rumah tangga, restoran kecil, atau katering.</p>
+            <p class="price">Rp 23.000</p>
+            <button onclick="tambahKeranjang('IKARO 100gr', 23000)"><a href="keranjang.js"></a>Tambah ke Keranjang</button>
+            <button onclick="beli('IKARO 100gr',23000)"><a href="https://wa.me/message/M3HZSI43427GF1">Beli Sekarang</a></button>
+        </div>
+        <div class="product">
+            <img src="images.jpg/produk2.jpg" alt="Penyedap Rasa IKARO 10g">
+            <h3>IKARO Kemasan 10 gram</h3>
+            <p>IKARO 10 gram adalah kemasan praktis untuk Anda yang ingin mencoba rasa gurih alami yang khas. Cocok untuk porsi kecil atau dibawa bepergian.</p>
+            <p class="price">Rp 3.000</p>
+            <button onclick="tambahKeranjang('IKARO 10gr', 3000)"><a href="keranjang.js"></a>Tambah ke Keranjang</button>
+            <button onclick="beli('IKARO 10gr',3000)"><a href="https://wa.me/message/M3HZSI43427GF1">Beli Sekarang</a></button>
+        </div>
+    </section>
+
+    <section>
+  <hr>
+  <h2>Keranjang</h2>
+  <ul id="keranjang"></ul>
+  <p id="total">Total: Rp 0</p>
+  <button onclick="checkout()">Checkout via WhatsApp</button>
+   </section>
+
+<!-- Panggil file JS -->
+<script src="keranjang.js"></script>
+
+    <footer id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: <a href="mailto:info@ikaro.com">info@ikaro.com</a></p>
+        <p>Telepon: +62-882-7733-4822</p>
+        <p>Instagram: <a href="https://instagram.com/ikaro.group">@ikaro.group</a></p>
+        <p>&copy; 2025 IKARO Group. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
